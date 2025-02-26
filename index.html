@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_section_1"><img id="header_logo" src="media/logo_alep.png"></div>
+        <nav>
+            <a href="">Accueil</a>
+            <a href="">Nos livres</a>
+        </nav>
+    </header>
+    <div id="section_1" class="section"></div>
+    <div id="section_2" class="section"><img src="media/img_section_2.png" />
+        <div id="section_2_cell_2">
+            <h1>LES ÉDITIONS ALeP</h1>
+            <p>En tant qu'éditeur, nous prenons en charge l’ensemble du processus éditorial, de la lecture des
+                manuscrits à la mise en lumière du texte de l’auteur. Ce travail inclut la correction et la mise en
+                page, réalisées en étroite collaboration avec l’écrivain, ainsi que la conception des couvertures. Nous
+                sélectionnons également l’imprimeur, nous assurons la diffusion.</p>
+            <div id="section_2_button"><a href="">Découvrir nos livres</a></div>
+        </div>
+    </div>
+    <div id="section_3" class="section">
+        <h1>Nos librairies partenaires</h1>
+        <div class="center">
+            <div id="map"></div>
+        </div>
+    </div>
+    <div id="section_4" class="section">
+        <h1>Nous contacter</h1>
+        <div id="section_4_contact">
+            <div id="section_4_mails">
+                <h2>Mails & envois de manuscrits</h2>
+                <a href="">editions.alep@gmail.com</a>
+                <a href="">Nous contacter</a>
+            </div>
+            <div id="section_4_rs">
+                <h2>Nos réseaux</h2>
+                <ul>
+                    <li><img class="logo"
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" /><a href="https://www.instagram.com">Instagram</a>
+                    </li>
+                    <li><img class="logo"
+                            src="https://img.freepik.com/vecteurs-premium/illustration-artistique_929495-41.jpg" /><a href="https://www.facebook.com">Facebook</a>
+                    </li>
+                    <li><img class="logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /><a href="https://fr.linkedin.com">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer><img id="footer_logo" src="media/logo_alep_blanc.png" />
+        <div>
+            <h2>CONTACT</h2>
+            <a href="">editions.alep@gmail.com</a>
+        </div>
+        <div>
+            <h2>RÉSEAUX</h2>
+            <ul>
+                <li><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" /><a
+                        href="https://www.instagram.com">Instagram</a>
+                </li>
+                <li><img class="logo"
+                        src="https://img.freepik.com/vecteurs-premium/illustration-artistique_929495-41.jpg" /><a
+                        href="https://www.facebook.com">Facebook</a>
+                </li>
+                <li><img class="logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /><a
+                        href="https://fr.linkedin.com">LinkedIn</a></li>
+                <li><img class="logo"
+                        src="https://media.licdn.com/dms/image/v2/C4E0BAQGJdvXE4CWdfA/company-logo_200_200/company-logo_200_200/0/1679654170188/infolocale_logo?e=2147483647&v=beta&t=EOOzAULQ6EWnWN32nq47jdFgzRppe-5oLUA8_TZ7lI8" /><a
+                        href="https://www.infolocale.fr">Infolocale
+                    </a></li>
+            </ul>
+        </div>
+        <div></div>
+    </footer>
+    <script>var map = L.map('map').setView([48.3, -3], 8);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map); var marker1 = L.marker([48.4860422, -2.6849284]).addTo(map);
+        var marker2 = L.marker([48.5854532, -2.5763969]).addTo(map);
+        var marker3 = L.marker([48.4085267, -2.5763969]).addTo(map);
+        var marker4 = L.marker([48.5854532, -4.5819861]).addTo(map);
+
+    </script>
+</body>
+
+</html>
