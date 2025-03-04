@@ -114,6 +114,17 @@ button {
   font-size: 5rem;
 }
 
+
+/* Media Queries du popup version telephone */
+
+@media screen and (max-width: 720px) {
+  #img_livre{
+    display: none;
+  }
+}
+
+
+
 /*CSS du catalogue*/
 
 button {
