@@ -1,37 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <link rel="stylesheet" href="style_catalogue.css" />
-  <script src="fonctionnalites.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_catalogue.css" />
+    <script src="fonctionnalites.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 
-  </head>
 <body> 
+    <header>
+        <div id="header_section_1"><img id="header_logo" src="media/logo_alep.png"></div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="catalogue.html">Nos livres</a>
+        </nav>
+    </header>
+
+<main>
+
+    <section>
+        <title>NOS LIVRES</title>
+  
+        <article>
+            <img src="livre_1.png" alt="livre" />
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor</p> 
+            <p>XX €</p>
+            <button>Découvrir</button>
+        </article>
+
+        <article>
+            <img src="livre_1.png" alt="livre" />
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor</p> 
+            <p>XX €</p>
+            <button>Découvrir</button>
+        </article>
+
+        <article>
+            <img src="livre_1.png" alt="livre" />
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor</p> 
+            <p>XX €</p>
+            <button>Découvrir</button>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <img src="livre_1.png" alt="livre" />
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor</p> 
+            <p>XX €</p>
+            <button>Découvrir</button>
+        </article>
+
+        <article>
+            <img src="livre_1.png" alt="livre" />
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor</p> 
+            <p>XX €</p>
+            <button>Découvrir</button>
+        </article>
+
+        <article>
+            <img src="livre_1.png" alt="livre" />
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor</p> 
+            <p>XX €</p>
+            <button>Découvrir</button>
+        </article>
+    </section>
+
+    <footer><img id="footer_logo" src="media/logo_alep_blanc.png" />
+        <div>
+            <h2>CONTACT</h2>
+            <a href="">editions.alep@gmail.com</a>
+        </div>
+        <div>
+            <h2>RÉSEAUX</h2>
+            <ul>
+                <li><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" /><a
+                    href="https://www.instagram.com">Instagram</a>
+                </li>
+                <li><img class="logo"
+                    src="https://img.freepik.com/vecteurs-premium/illustration-artistique_929495-41.jpg" /><a
+                    href="https://www.facebook.com">Facebook</a>
+                </li>
+                <li><img class="logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /><a
+                    href="https://fr.linkedin.com">LinkedIn</a></li>
+                <li><img class="logo"
+                    src="https://media.licdn.com/dms/image/v2/C4E0BAQGJdvXE4CWdfA/company-logo_200_200/company-logo_200_200/0/1679654170188/infolocale_logo?e=2147483647&v=beta&t=EOOzAULQ6EWnWN32nq47jdFgzRppe-5oLUA8_TZ7lI8" /><a
+                    href="https://www.infolocale.fr">Infolocale</a></li>
+            </ul>
+        </div>
+  </footer>
+
+  <!--POPUP-->
 
   <button onclick="togglePopup()">En savoir +</button>
-  <div id="popup-overlay" class = "opend">
-    <div class="popup-content">
-      <img id="img_livre" src ="media/livre_1.png" alt = "Couverture du livre 1"><br/>
+      <div id="popup-overlay" class = "opend">
+          <div class="popup-content">
+          <img id="img_livre" src ="media/livre_1.png" alt = "Couverture du livre 1"><br/>
       
-      <div class="description_popup">
-        <h2>La résilience du chat <br></h2>
-        <h1>Jean-Pierre Paumier</h1>
-        <p>ISBN: 2385680408<br>
-         Description<br>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec leo aliquam mi efficitur tristique.</p>
-         <div class="auteur">
-              <img id="img_ronde" src ="media/johan.png" alt = "Photo de Johan"><br/>   
-              <p>Mot de l'auteur<br>       
-               fbhjghfhhfhjfqDonec nec leo aliquam mi efficitur tristique.</p>
-         </div>
-      </div> 
+          <div class="description_popup">
+              <h2>La résilience du chat </h2><br>
+              <h3>Jean-Pierre Paumier</h3>
+              <p>ISBN: <br>2385680408<br>
+              <h3>Description</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec leo  aliquam mi efficitur tristique. Maecenas pharetra rutrum est, id  faucibus massa dignissim id. Etiam viverra pretium dui porttitor  feugiat. Phasellus et dolor congue, euismod arcu id, laoreet tellus. Sed feugiat neque ut ex tempus consectetur.</p>
+         
+              <div class="auteur">
+                  <img id="img_ronde" src ="media/johan.png" alt = "Photo de Johan"><br/> 
+                  <div class="description_auteur">
+                      <h3>Mot de l'auteur</h3>     
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec leo  aliquam mi efficitur tristique.</p>
+                  </div>  
+              </div>
+          </div> 
               
-      <a href="javascript:void(0)" onclick="togglePopup()" class="popup-exit">&times;</a>
-   </div>
-  </div>
-
+          <a href="javascript:void(0)" onclick="togglePopup()" class="popup-exit">&times;</a>
+          </div>
+      </div>
 
 </body>
 

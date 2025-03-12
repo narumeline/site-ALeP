@@ -1,3 +1,13 @@
+
+
+/*CSS POPUP*/
+
+.description_popup {
+  display:flex;
+  flex-direction: column; /*colonne*/
+  font-family: "Roboto", sans-serif;
+}
+
 *{
   margin:0;
   padding:0;
@@ -12,16 +22,12 @@
   bottom:0;
   background: rgba(0,0,0,0,7);
   z-index:89;
-
   display:none; /* pour cacher le popup*/
-
 }
-
 
 #popup-overlay.open{
   display:block !important;
 }
-
 
 .popup-content{
   max-width:741px;
@@ -36,39 +42,48 @@
   transform:translate(-50%, -50%); /* sert à positionner le pop up au milieu*/
   display: flex;
   gap: 20px;
+  align-items: center; /* sert à positionner le livre au milieu*/
 }
 
-#img_livre{
+#img_livre {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   position:relative;
   width: 40%;
+  height: 5%;
 
 }
 
-.auteur img{
+.auteur img {
   width:80px;
+  height:90%;
   padding-right:20px;
 }
 
-.auteur{
+.auteur {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
-#image_ronde{
-  
+.description_auteur {
+  display:flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+#image_ronde {
   width:40%;
 }
 
-.popup-content p{
+.popup-content p {
   margin:20px 0;
 }
 
-.popup-content p{
+.popup-content p {
   flex: 1;
 }
 .popup-content h1 {
@@ -79,8 +94,7 @@
   margin: 5px 0;
 }
 
-
-button{
+button {
   text-decoration: none;
   color:#FFF;
   background: #000;
@@ -89,7 +103,7 @@ button{
   display:inline-block;
 }
 
-.popup-exit{
+.popup-exit {
   position:absolute;
   top:-10px;
   right:10px;
@@ -98,4 +112,59 @@ button{
   padding:5px 1px;
   border-radius:5px;
   font-size: 5rem;
+}
+
+
+/* Media Queries du popup version telephone */
+
+@media screen and (max-width: 720px) {
+  #img_livre{
+    display: none;
+  }
+}
+
+
+
+/*CSS du catalogue*/
+
+button {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #640000;
+}
+
+
+
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #303030;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer_logo {
+  height: 60px;
+  margin-left: 150px;
+}
+
+.logo {
+  width: 30px;
 }
